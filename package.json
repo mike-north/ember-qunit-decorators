@@ -1,6 +1,6 @@
 {
   "name": "ember-qunit-decorators",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "description": "Use ES6 or TypeScript decorators for QUnit tests in your Ember app",
   "keywords": [
     "ember-addon"
