@@ -1,4 +1,5 @@
 'use strict';
+/* eslint-disable node/no-extraneous-require */
 const Funnel = require('broccoli-funnel');
 
 module.exports = {
