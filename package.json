@@ -1,11 +1,15 @@
 {
   "name": "ember-qunit-decorators",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "Use ES6 or TypeScript decorators for QUnit tests in your Ember app",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mike-norht/ember-qunit-decorators"
+  },
+  "private": false,
   "license": "MIT",
   "author": "",
   "directories": {
@@ -19,7 +23,8 @@
     "test": "ember test",
     "test:all": "ember try:each",
     "prepublishOnly": "ember ts:precompile",
-    "postpublish": "ember ts:clean"
+    "postpublish": "ember ts:clean",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "qunit-decorators": "^1.1.1",
