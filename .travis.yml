@@ -41,6 +41,13 @@ before_install:
   - npm install -g npm@4
   - npm --version
 
+after_success:
+  - npm run travis-deploy-once "./node_modules/.bin/ember ts:precompile & npm run semantic-release"
+
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
+
 script:
   - npm run lint:js
   # Usually, it's ok to finish the test scenario without reverting

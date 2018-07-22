@@ -8,7 +8,6 @@ module.exports = {
     // import { ... } from 'ember-qunit-decorators';
     
     const Funnel = require('broccoli-funnel');
-    const stew = require('broccoli-stew');
     let namespacedTree = new Funnel(tree, {
       srcDir: '/',
       destDir: `/${this.moduleName()}`,
