@@ -1,7 +1,7 @@
 ember-qunit-decorators
 ==============================================================================
 
-[Short description of the addon.]
+Use ES6 or TypeScript decorators for QUnit tests in your Ember app
 
 Installation
 ------------------------------------------------------------------------------
@@ -14,8 +14,71 @@ ember install ember-qunit-decorators
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+When present in an Ember.js project, this adodn automatically adds support for [qunit-decorators](https://github.com/mike-north/qunit-decorators). Details about the usage of the `@suite` and `@test` decorators can be found in the [qunit-decorators README](https://github.com/mike-north/qunit-decorators/blob/master/README.md)
 
+This addon provides three base classes that make working with [ember-qunit](https://github.com/emberjs/ember-qunit) and [@ember/test-helpers](https://github.com/emberjs/ember-test-helpers) easy.
+
+
+Example Tests
+------------------------------------------------------------------------------
+
+### Unit Test
+
+```ts
+import { suite, test } from 'qunit-decorators';
+import { EmberTest } from 'ember-qunit-decorators/test-support';
+
+@suite('Unit | Route | index')
+export class IndexRouteTest extends EmberTest {
+
+  @test('it exists')
+  itWorksTest(assert: Assert) {
+    let route = this.owner.lookup('route:index');
+    assert.ok(route);
+  }
+}
+```
+### Integration Test
+
+```ts
+import { suite, test } from "qunit-decorators";
+import { render } from "@ember/test-helpers";
+import hbs from "htmlbars-inline-precompile";
+import { EmberRenderingTest } from "ember-qunit-decorators/test-support";
+
+@suite("Integration | Helper | capitalize")
+export class CapitalizeHelperTest extends EmberRenderingTest {
+
+  @test("it renders")
+  async itWorks(assert: Assert) {
+    this.set("inputValue", "hello");
+
+    await render(hbs`{{capitalize inputValue}}`);
+
+    assert.equal(('' + this.element.textContent).trim(), "Hello");
+  }
+}
+```
+
+### Acceptance Test
+
+```ts
+import { suite, test } from 'qunit-decorators';
+import { visit, currentURL } from '@ember/test-helpers';
+import { EmberApplicationTest } from 'ember-qunit-decorators/test-support';
+
+@suite('Acceptance | index')
+export class IndexAcceptanceTest extends EmberApplicationTest {
+
+  @test('visiting / ')
+  async doVisit(assert: Assert) {
+    await visit('/');
+
+    assert.equal(currentURL(), '/');
+  }
+}
+
+```
 
 Contributing
 ------------------------------------------------------------------------------

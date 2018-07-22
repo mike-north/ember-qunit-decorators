@@ -1,7 +1,7 @@
 {
   "name": "ember-qunit-decorators",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Use ES6 or TypeScript decorators for QUnit tests in your Ember app",
   "keywords": [
     "ember-addon"
   ],
@@ -17,14 +17,26 @@
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test",
-    "test:all": "ember try:each"
+    "test:all": "ember try:each",
+    "prepublishOnly": "ember ts:precompile",
+    "postpublish": "ember ts:clean"
   },
   "dependencies": {
+    "qunit-decorators": "^1.1.1",
     "ember-cli-babel": "^6.6.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.6.1",
+    "@types/ember": "^2.8.30",
+    "@types/ember-qunit": "^3.0.3",
+    "@types/ember-test-helpers": "^0.7.1",
+    "@types/ember-testing-helpers": "0.0.3",
+    "@types/ember__test-helpers": "^0.7.0",
+    "@types/qunit": "^2.5.1",
+    "@types/rsvp": "^4.0.2",
+    "babel-eslint": "^8.2.6",
     "broccoli-asset-rev": "^2.7.0",
+    "broccoli-stew": "^2.0.0",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~3.2.0",
     "ember-cli-dependency-checker": "^2.0.0",
@@ -34,7 +46,9 @@
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.3.2",
     "ember-cli-sri": "^2.1.0",
+    "ember-cli-typescript": "github:mike-north/ember-cli-typescript#addon-test-support",
     "ember-cli-uglify": "^2.0.0",
+    "ember-decorators": "^2.2.1",
     "ember-disable-prototype-extensions": "^1.1.2",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.1.0",
@@ -46,7 +60,8 @@
     "eslint-plugin-ember": "^5.0.0",
     "eslint-plugin-node": "^6.0.1",
     "loader.js": "^4.2.3",
-    "qunit-dom": "^0.6.2"
+    "qunit-dom": "^0.6.2",
+    "typescript": "^2.9.2"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
