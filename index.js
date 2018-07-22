@@ -1,4 +1,5 @@
 'use strict';
+const Funnel = require('broccoli-funnel');
 
 module.exports = {
   name: 'ember-qunit-decorators',
@@ -7,7 +8,6 @@ module.exports = {
     // so that can have our `import`'s be
     // import { ... } from 'ember-qunit-decorators';
     
-    const Funnel = require('broccoli-funnel');
     let namespacedTree = new Funnel(tree, {
       srcDir: '/',
       destDir: `/${this.moduleName()}`,
