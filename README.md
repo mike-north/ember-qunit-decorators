@@ -1,6 +1,9 @@
 ember-qunit-decorators
 ==============================================================================
 
+[![Build Status](https://travis-ci.org/mike-north/ember-qunit-decorators.svg?branch=master)](https://travis-ci.org/mike-north/ember-qunit-decorators)
+[![Version](https://img.shields.io/npm/v/ember-qunit-decorators.svg)](https://www.npmjs.com/package/ember-qunit-decorators)
+
 Use ES6 or TypeScript decorators for QUnit tests in your Ember app
 
 Installation
