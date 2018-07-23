@@ -52,5 +52,8 @@
     "addon/**/*",
     "test-support/**/*",
     "addon-test-support/**/*"
+  ],
+  "exclude": [
+    "blueprints/**/*"
   ]
 }
