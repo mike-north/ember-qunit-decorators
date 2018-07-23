@@ -6,7 +6,7 @@ export class BarBaz extends EmberTest {
 
   @test('it exists')
   itExists(assert: Assert) {
-    let component = this.owner.factoryFor('component:bar-baz').create();
+    let component = (this.owner as any).factoryFor('component:bar-baz').create();
     assert.ok(component);
   }
 }

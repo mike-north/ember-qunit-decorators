@@ -1,6 +1,6 @@
 import { helper } from '@ember/component/helper';
 
-export function leetCase(params/*, hash*/) {
+export function leetCase([params]: [string]/*, hash*/) {
   return params;
 }
 
