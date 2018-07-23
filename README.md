@@ -17,7 +17,7 @@ ember install ember-qunit-decorators
 Usage
 ------------------------------------------------------------------------------
 
-When present in an Ember.js project, this adodn automatically adds support for [qunit-decorators](https://github.com/mike-north/qunit-decorators). Details about the usage of the `@suite` and `@test` decorators can be found in the [qunit-decorators README](https://github.com/mike-north/qunit-decorators/blob/master/README.md)
+When present in an Ember.js project, this addon automatically provides support for [qunit-decorators](https://github.com/mike-north/qunit-decorators). Details about the usage of the `@suite` and `@test` decorators can be found in the [qunit-decorators README](https://github.com/mike-north/qunit-decorators/blob/master/README.md)
 
 This addon provides three base classes that make working with [ember-qunit](https://github.com/emberjs/ember-qunit) and [@ember/test-helpers](https://github.com/emberjs/ember-test-helpers) easy.
 
