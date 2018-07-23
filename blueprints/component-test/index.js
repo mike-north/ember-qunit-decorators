@@ -4,7 +4,6 @@ const path = require('path');
 const stringUtil = require('ember-cli-string-utils');
 const isPackageMissing = require('ember-cli-is-package-missing');
 const getPathOption = require('ember-cli-get-component-path-option');
-const { makeTestClassName } = require('../utils');
 
 const useTestFrameworkDetector = require('../test-framework-detector');
 const isModuleUnificationProject = require('../module-unification').isModuleUnificationProject;

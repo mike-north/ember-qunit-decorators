@@ -4,7 +4,6 @@ const stringUtils = require('ember-cli-string-utils');
 const isPackageMissing = require('ember-cli-is-package-missing');
 
 const useTestFrameworkDetector = require('../test-framework-detector');
-const { makeTestClassName } = require('../utils');
 
 module.exports = useTestFrameworkDetector({
   description: 'Generates a helper integration test or a unit test.',

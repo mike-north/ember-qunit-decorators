@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const pathUtil = require('ember-cli-path-utils');
 const stringUtils = require('ember-cli-string-utils');
-const { makeTestClassName } = require('../utils');
+
 const useTestFrameworkDetector = require('../test-framework-detector');
 
 module.exports = useTestFrameworkDetector({
