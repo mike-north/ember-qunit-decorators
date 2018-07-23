@@ -21,6 +21,23 @@ When present in an Ember.js project, this addon automatically provides support f
 
 This addon provides three base classes that make working with [ember-qunit](https://github.com/emberjs/ember-qunit) and [@ember/test-helpers](https://github.com/emberjs/ember-test-helpers) easy.
 
+Blueprints
+------------------------------------------------------------------------------
+
+**Test generators for all standard ember.js objects are included**, so you should get tests like the examples below automatically, as a result of generating `Component`s, `Route`s, `Service`s and more!
+
+You may optionally generate tests explicitly by using the generators directly
+
+```sh
+ember g component-test
+```
+
+By default, if you have [ember-cli-typescript](https://github.com/typed-ember/ember-cli-typescript) installed in your project, the tests will be generated in TypeScript, otherwise they'll be in JavaScript. You may explcitly specify which language the tests should be in with `--inJs` or `--inTs` flags
+
+```sh
+ember g acceptance-test --inTs
+```
+
 
 Example Tests
 ------------------------------------------------------------------------------

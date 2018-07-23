@@ -1,0 +1,12 @@
+import { suite, test } from 'qunit-decorators';
+import { EmberTest } from 'ember-qunit-decorators/test-support';
+
+@suite('<%= friendlyTestDescription %>')
+export class <%= testClassName %>ControllerTest extends EmberTest {
+  // Replace this with your real tests.
+  @test('it exists')
+  itExists(assert<% if (isTyped) {%>: Assert<% } %>) {
+    let controller = this.owner.lookup('controller:<%= controllerPathName %>');
+    assert.ok(controller);
+  }
+}

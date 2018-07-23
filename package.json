@@ -25,7 +25,8 @@
     "prepublishOnly": "ember ts:precompile",
     "postpublish": "ember ts:clean",
     "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "nodetest": "mocha node-tests --recursive"
   },
   "dependencies": {
     "qunit-decorators": "^1.1.1",
@@ -45,6 +46,7 @@
     "broccoli-stew": "^2.0.0",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~3.2.0",
+    "ember-cli-blueprint-test-helpers": "^0.18.3",
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-eslint": "^4.2.1",
     "ember-cli-htmlbars": "^2.0.1",
@@ -66,15 +68,22 @@
     "eslint-plugin-ember": "^5.0.0",
     "eslint-plugin-node": "^6.0.1",
     "loader.js": "^4.2.3",
+    "mocha": "^4.1.0",
     "qunit-dom": "^0.6.2",
     "semantic-release": "^15.8.1",
-    "typescript": "^2.9.2",
-    "travis-deploy-once": "^5.0.1"
+    "travis-deploy-once": "^5.0.1",
+    "typescript": "^2.9.2"
   },
   "engines": {
     "node": ">= 8"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "after": [
+      "ember-source",
+      "ember-data",
+      "ember-decorators",
+      "ember-cli-typescript"
+    ]
   }
 }
