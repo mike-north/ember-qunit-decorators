@@ -78,6 +78,12 @@
     "node": ">= 8"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "after": [
+      "ember-source",
+      "ember-data",
+      "ember-decorators",
+      "ember-cli-typescript"
+    ]
   }
 }
