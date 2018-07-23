@@ -48,6 +48,14 @@ module.exports = {
         "node/no-extraneous-require": "off"
         // add your custom rules and overrides for node files here
       })
+    }, {
+      files: [
+        "node-tests/blueprints/**/*.js"
+      ],
+      env: {
+        node: true,
+        mocha: true
+      }
     }
   ]
 };
