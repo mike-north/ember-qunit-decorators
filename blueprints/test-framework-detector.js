@@ -1,13 +1,40 @@
+/* eslint-env node */
 'use strict';
 
 const fs = require('fs');
 const path = require('path');
 const VersionChecker = require('ember-cli-version-checker');
+const { makeTestClassName } = require('./utils');
 
 module.exports = function(blueprint) {
+
   blueprint.supportsAddon = function() {
     return false;
   };
+  // fileMapTokens
+  const originalFileMapTokens = blueprint.fileMapTokens;
+  blueprint.fileMapTokens = function() {
+    let superTokens = originalFileMapTokens ? originalFileMapTokens.call(this) : {};
+    return Object.assign({
+      __ext__: function(options) {
+        return options.locals.lang || 'js'
+      }
+    }, superTokens);
+  };
+  // locals
+  const originalLocals = blueprint.locals;
+  blueprint.locals = function(options) {
+    let dependencies = this.project.dependencies();
+    let superLocals = originalLocals ? originalLocals.call(this, options) : {};
+    let lang = ('ember-cli-typescript' in dependencies) ? 'ts' : 'js';
+    let testClassName = makeTestClassName(options.entity);
+
+    return Object.assign({
+      lang,
+      testClassName,
+      isTyped: lang === 'ts'
+    }, superLocals)
+  }
 
   blueprint.filesPath = function() {
     let type;
@@ -42,9 +69,7 @@ module.exports = function(blueprint) {
       type = 'qunit';
     }
     
-    const lang = ('ember-cli-typescript' in dependencies) ? 'ts' : 'js'
-
-    return path.join(this.path, type + (lang ? '-ts' : '') + '-files');
+    return path.join(this.path, type + '-files');
   };
 
   return blueprint;

@@ -94,7 +94,6 @@ module.exports = useTestFrameworkDetector({
     return {
       path: getPathOption(options),
       testType: testType,
-      testClassName: makeTestClassName(options.entity),
       componentPathName: componentPathName,
       friendlyTestDescription: friendlyTestDescription,
     };

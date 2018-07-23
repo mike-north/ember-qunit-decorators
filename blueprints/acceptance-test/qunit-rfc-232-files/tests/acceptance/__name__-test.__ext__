@@ -6,7 +6,7 @@ import { EmberApplicationTest } from 'ember-qunit-decorators/test-support';
 export class <%= testClassName %>AcceptanceTest extends EmberApplicationTest {
 
   @test('visiting /<%= dasherizedModuleName %>')
-  async visitPage(assert) {
+  async visitPage(assert<% if (isTyped) {%>: Assert<% } %>) {
     await visit('/<%= dasherizedModuleName %>');
     assert.equal(currentURL(), '/<%= dasherizedModuleName %>');
   }

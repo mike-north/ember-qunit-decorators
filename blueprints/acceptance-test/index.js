@@ -28,7 +28,6 @@ module.exports = useTestFrameworkDetector({
 
     return {
       testFolderRoot: testFolderRoot,
-      testClassName: makeTestClassName(options.entity),
       friendlyTestName,
       destroyAppExists,
     };

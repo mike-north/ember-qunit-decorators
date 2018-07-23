@@ -1,0 +1,29 @@
+import { suite, test } from 'qunit-decorators';
+<% if (testType === 'integration') { %>import { EmberRenderingTest } from 'ember-qunit-decorators/test-support';
+import { render } from '@ember/test-helpers';
+import hbs from 'htmlbars-inline-precompile';
+
+@suite('<%= friendlyTestName %>')
+export class <%= testClassName %>HelperTest extends EmberRenderingTest {
+  // Replace this with your real tests.
+  @test('it renders')
+  async itRenders(assert<% if (isTyped) {%>: Assert<% } %>) {
+    this.set('inputValue', '1234');
+
+    await render(hbs`{{<%= dasherizedModuleName %> inputValue}}`);
+
+    assert.equal(('' + this.element.textContent).trim(), '1234');
+  }
+}<% } else if (testType === 'unit') { %>import { EmberTest } from 'ember-qunit-decorators/test-support';
+import { <%= camelizedModuleName %> } from '<%= dasherizedModulePrefix %>/helpers/<%= dasherizedModuleName %>';
+
+@suite('<%= friendlyTestName %>')
+export class <%= testClassName %>HelperTest extends EmberTest {
+  // Replace this with your real tests.
+  @test('it works')
+  itWorks(assert<% if (isTyped) {%>: Assert<% } %>) {
+    let result = <%= camelizedModuleName %>([42]);
+    assert.ok(result);
+  }
+}
+<% } %>
