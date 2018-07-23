@@ -7,7 +7,7 @@ export class LeetCaseHelperTest extends EmberTest {
   // Replace this with your real tests.
   @test('it works')
   itWorks(assert: Assert) {
-    let result = leetCase([42]);
+    let result = leetCase(['42']);
     assert.ok(result);
   }
 }
