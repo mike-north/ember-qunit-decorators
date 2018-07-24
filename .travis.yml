@@ -32,7 +32,7 @@ before_install:
 
 after_success:
   - echo "Precompiling TypeScript"
-  - ./node_modules/.bin/ember ts:precompile
+  - npm run-script prepublishOnly
   - ls
   - echo "Attempting semantic-release"
   - npm run travis-deploy-once "npm run semantic-release"
