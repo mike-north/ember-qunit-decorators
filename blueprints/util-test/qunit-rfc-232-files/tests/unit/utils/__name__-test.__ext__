@@ -3,9 +3,9 @@ import { suite, test } from 'qunit-decorators';
 
 @suite('<%= friendlyTestName %>')
 export class <%= testClassName %>Test {
+
   // Replace this with your real tests.
-  @test('it works')
-  itWorks(assert<% if (isTyped) {%>: Assert<% } %>) {
+  @test 'it works'(assert<% if (isTyped) {%>: Assert<% } %>) {
     let result = <%= camelizedModuleName %>();
     assert.ok(result);
   }

@@ -6,8 +6,7 @@ import hbs from 'htmlbars-inline-precompile';
 @suite('<%= friendlyTestDescription %>')
 export class <%= testClassName %>ComponentTest extends EmberRenderingTest {
   
-  @test('it renders when used in {{inline-form}}')
-  async testInline(assert<% if (isTyped) {%>: Assert<% } %>) {
+  @test async 'it renders when used in {{inline-form}}'(assert<% if (isTyped) {%>: Assert<% } %>) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
@@ -15,9 +14,8 @@ export class <%= testClassName %>ComponentTest extends EmberRenderingTest {
 
     assert.equal(('' + this.element.textContent).trim(), '');
   }
-  @test('it renders when used in {{#block-form}}  {{/block-form}}')
 
-  async testBlock(assert<% if (isTyped) {%>: Assert<% } %>) {
+  @test async 'it renders when used in {{#block-form}}  {{/block-form}}'(assert<% if (isTyped) {%>: Assert<% } %>) {
     // Template block usage:
     await render(hbs`
       {{#<%= componentPathName %>}}
@@ -33,8 +31,7 @@ export class <%= testClassName %>ComponentTest extends EmberRenderingTest {
 @suite('<%= friendlyTestDescription %>')
 export class <%= testClassName %> extends EmberTest {
 
-  @test('it exists')
-  itExists(assert<% if (isTyped) {%>: Assert<% } %>) {
+  @test 'it exists'(assert<% if (isTyped) {%>: Assert<% } %>) {
     let component = this.owner.factoryFor('component:<%= componentPathName %>').create();
     assert.ok(component);
   }
