@@ -4,9 +4,9 @@ import { suite, test } from 'qunit-decorators';
 
 @suite('<%= friendlyTestName %>')
 export class <%= testClassName %>MixinTest {
+
   // Replace this with your real tests.
-  @test('it works')
-  itExists(assert<% if (isTyped) {%>: Assert<% } %>) {
+  @test 'it works'(assert<% if (isTyped) {%>: Assert<% } %>) {
     let <%= classifiedModuleName %>Object = EmberObject.extend(<%= classifiedModuleName %>Mixin);
     let subject = <%= classifiedModuleName %>Object.create();
     assert.ok(subject);

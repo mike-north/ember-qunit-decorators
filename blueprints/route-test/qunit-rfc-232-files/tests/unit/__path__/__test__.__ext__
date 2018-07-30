@@ -4,8 +4,7 @@ import { EmberTest } from 'ember-qunit-decorators/test-support';
 @suite('<%= friendlyTestDescription %>')
 export class <%= testClassName %>RouteTest extends EmberTest {
 
-  @test('it exists')
-  itExists(assert<% if (isTyped) {%>: Assert<% } %>) {
+  @test 'it exists'(assert<% if (isTyped) {%>: Assert<% } %>) {
     let route = this.owner.lookup('route:<%= moduleName %>');
     assert.ok(route);
   }

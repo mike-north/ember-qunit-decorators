@@ -6,8 +6,7 @@ import hbs from 'htmlbars-inline-precompile';
 @suite('<%= friendlyTestName %>')
 export class <%= testClassName %>HelperTest extends EmberRenderingTest {
   // Replace this with your real tests.
-  @test('it renders')
-  async itRenders(assert<% if (isTyped) {%>: Assert<% } %>) {
+  @test async 'it renders'(assert<% if (isTyped) {%>: Assert<% } %>) {
     this.set('inputValue', '1234');
 
     await render(hbs`{{<%= dasherizedModuleName %> inputValue}}`);
@@ -20,8 +19,7 @@ import { <%= camelizedModuleName %> } from '<%= dasherizedModulePrefix %>/helper
 @suite('<%= friendlyTestName %>')
 export class <%= testClassName %>HelperTest extends EmberTest {
   // Replace this with your real tests.
-  @test('it works')
-  itWorks(assert<% if (isTyped) {%>: Assert<% } %>) {
+  @test 'it works'(assert<% if (isTyped) {%>: Assert<% } %>) {
     let result = <%= camelizedModuleName %>([42]);
     assert.ok(result);
   }

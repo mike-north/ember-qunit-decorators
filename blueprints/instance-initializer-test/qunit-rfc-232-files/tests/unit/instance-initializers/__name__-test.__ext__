@@ -28,8 +28,7 @@ export class <%= testClassName %>InstanceInitializerTest extends EmberTest {
   }
 
   // Replace this with your real tests.
-  @test('it works')
-  async itWorks(assert<% if (isTyped) {%>: Assert<% } %>) {
+  @test async 'it works'(assert<% if (isTyped) {%>: Assert<% } %>) {
     await this.instance.boot();
 
     assert.ok(true);
