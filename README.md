@@ -51,8 +51,7 @@ import { EmberTest } from 'ember-qunit-decorators/test-support';
 @suite('Unit | Route | index')
 export class IndexRouteTest extends EmberTest {
 
-  @test('it exists')
-  itWorksTest(assert: Assert) {
+  @test 'it exists'(assert: Assert) {
     let route = this.owner.lookup('route:index');
     assert.ok(route);
   }
@@ -69,8 +68,7 @@ import { EmberRenderingTest } from "ember-qunit-decorators/test-support";
 @suite("Integration | Helper | capitalize")
 export class CapitalizeHelperTest extends EmberRenderingTest {
 
-  @test("it renders")
-  async itWorks(assert: Assert) {
+  @test async 'it renders'(assert: Assert) {
     this.set("inputValue", "hello");
 
     await render(hbs`{{capitalize inputValue}}`);
@@ -90,8 +88,7 @@ import { EmberApplicationTest } from 'ember-qunit-decorators/test-support';
 @suite('Acceptance | index')
 export class IndexAcceptanceTest extends EmberApplicationTest {
 
-  @test('visiting / ')
-  async doVisit(assert: Assert) {
+  @test async 'visiting / '(assert: Assert) {
     await visit('/');
 
     assert.equal(currentURL(), '/');
