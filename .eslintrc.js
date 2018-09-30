@@ -1,6 +1,5 @@
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2017,
     sourceType: 'module'
@@ -21,11 +20,13 @@ module.exports = {
     // node files
     {
       files: [
+        '.template-lintrc.js',
         'ember-cli-build.js',
         'index.js',
         'testem.js',
-        'blueprints/utils.js',
         'blueprints/*/index.js',
+        'blueprints/*.js',
+        'node-tests/**/*.js',
         'config/**/*.js',
         'tests/dummy/config/**/*.js'
       ],
@@ -41,21 +42,14 @@ module.exports = {
       },
       env: {
         browser: false,
-        node: true
+        node: true,
+        mocha: true
       },
       plugins: ['node'],
       rules: Object.assign({}, require('eslint-plugin-node').configs.recommended.rules, {
-        "node/no-extraneous-require": "off"
         // add your custom rules and overrides for node files here
+        "node/no-extraneous-require": 0
       })
-    }, {
-      files: [
-        "node-tests/blueprints/**/*.js"
-      ],
-      env: {
-        node: true,
-        mocha: true
-      }
     }
   ]
 };
