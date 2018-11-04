@@ -9273,13 +9273,13 @@ qunit-decorators@1.1.2:
   resolved "https://registry.yarnpkg.com/qunit-decorators/-/qunit-decorators-1.1.2.tgz#4a61bfe8a5ac9d2dd775e9767cb551eadc21303a"
   integrity sha512-Ez8Qqlh2IZo5u/D6sFyiOX5Kq6RCy+4suRJ4KwxqckwMfivyVsdHPdDKYEbs8LvKTavxZToTU19VggsqkPXRog==
 
-qunit-dom@0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/qunit-dom/-/qunit-dom-0.7.1.tgz#2e6ad4a6453c034f88ef415250b37e82572460b9"
-  integrity sha512-8mwF7taWSqDrVRYHgp98nJmoTeE2z37K7RmHjV18pX0YoGxaJSYg+y1bRE0h3tsjSMs85W9gL/WR62yfoQN3VA==
+qunit-dom@0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/qunit-dom/-/qunit-dom-0.8.0.tgz#a735e7f6ec2e9d08ec5bb695b3d52c97011e69b8"
+  integrity sha512-GGIJnDUCQI8bxxz1yD4sBAQOWlS9JxnWsVpGtkzz/D0GHooc3AkOdjpQq/55WfmJl8pG8uHKqTy0eKse6fbSpw==
   dependencies:
     broccoli-funnel "^2.0.0"
-    broccoli-merge-trees "^2.0.0"
+    broccoli-merge-trees "^3.0.1"
 
 qunit@^2.5.0:
   version "2.6.2"
