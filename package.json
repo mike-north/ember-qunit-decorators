@@ -47,7 +47,7 @@
     "@types/qunit": "2.5.3",
     "@types/rsvp": "4.0.2",
     "babel-eslint": "8.2.6",
-    "broccoli-asset-rev": "2.7.0",
+    "broccoli-asset-rev": "3.0.0",
     "broccoli-stew": "2.0.1",
     "ember-ajax": "3.1.1",
     "ember-cli": "3.4.3",
