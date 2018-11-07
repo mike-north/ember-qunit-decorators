@@ -813,6 +813,22 @@
   resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.9.3.tgz#30e1a0a0eb9714166966cca2b6f7d4346d6df111"
   integrity sha512-eRJ5mGGdv0YU4gXg+WMdN3XQ7/V/4eRoS/mpmqqHs2bFXFayaB+fqAP6dgzxlpm3aXsSdv4aHq/zLM5c1cx7Cg==
 
+"@mike-north/js-lib-renovate-config@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@mike-north/js-lib-renovate-config/-/js-lib-renovate-config-0.0.1.tgz#9e2878a5b9896b8b2838340f2a29f760e28e5ec5"
+  integrity sha512-I/MYzrZJlMAKWZUJ4yxQK6tp9kCBKKdivNZ89ZXy/+rK6GjOIjX/UBsH3Xx3gdbQq0a3rmw0NHy+VJ9HKQWOUg==
+
+"@mike-north/js-lib-semantic-release-config@^0.0.0-development":
+  version "0.0.0-development"
+  resolved "https://registry.yarnpkg.com/@mike-north/js-lib-semantic-release-config/-/js-lib-semantic-release-config-0.0.0-development.tgz#b3c0f8972036c74dea94208a7f57b5d3a2f7dc1b"
+  integrity sha512-dXMVK3duEXXb8guYfzcZ2D2Rs1/dFbbak5H5DJwcsDqQqlpjinb9wNJNNByOlz9eEUi48fenbO5TQFDn+9ioOg==
+  dependencies:
+    "@semantic-release/changelog" "^3.0.0"
+    "@semantic-release/error" "^2.2.0"
+    "@semantic-release/exec" "^3.0.2"
+    "@semantic-release/git" "^7.0.1"
+    "@semantic-release/github" "^5.0.2"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -825,6 +841,21 @@
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.2.tgz#54c5a964462be3d4d78af631363c18d6fa91ac26"
   integrity sha512-yprFYuno9FtNsSHVlSWd+nRlmGoAbqbeCwOryP6sC/zoCjhpArcRMYp19EvpSUSizJAlsXEwJv+wcWS9XaXdMw==
+
+"@octokit/rest@^15.13.1":
+  version "15.16.1"
+  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-15.16.1.tgz#399b06660fe16852cf432059c845d4cdcaf77f5a"
+  integrity sha512-86RGoibm8AJ3ZBlM0NdMI932wEZ/bdo2eEppHtliEYwJT9hsy5qt+i9HA+T8CC90r4atoFQDrY7mDLBcAjp9ow==
+  dependencies:
+    before-after-hook "^1.1.0"
+    btoa-lite "^1.0.0"
+    debug "^3.1.0"
+    http-proxy-agent "^2.1.0"
+    https-proxy-agent "^2.2.0"
+    lodash "^4.17.4"
+    node-fetch "^2.1.1"
+    universal-user-agent "^2.0.0"
+    url-template "^2.0.8"
 
 "@octokit/rest@^15.2.0":
   version "15.12.1"
@@ -840,6 +871,16 @@
     node-fetch "^2.1.1"
     universal-user-agent "^2.0.0"
     url-template "^2.0.8"
+
+"@semantic-release/changelog@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-3.0.1.tgz#d39a8130aa33c54541e529322769a1c8c51dfc54"
+  integrity sha512-N3lWwS3SUQmjBI/IoxwfQwPHAeQgYkvM63nzBpYkp2DXQ9zdLs5ZYpD1oln//wWCKVSIY2tPDs7KD4LVVh6u5Q==
+  dependencies:
+    "@semantic-release/error" "^2.1.0"
+    aggregate-error "^1.0.0"
+    fs-extra "^7.0.0"
+    lodash "^4.17.4"
 
 "@semantic-release/commit-analyzer@^6.0.0":
   version "6.0.1"
@@ -869,10 +910,38 @@
     lodash "^4.17.4"
     parse-json "^4.0.0"
 
+"@semantic-release/exec@^3.0.2":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@semantic-release/exec/-/exec-3.3.0.tgz#3ceaf66084cee82fb4babde387583259701ed381"
+  integrity sha512-6a5nMGLyYJUl5me4orEIA89mf1Roz1jEVlv0GgIJv1k/yjEcmWicYQ76PrPfUzh81sVtfHfK0zLN5Vikz8f5oA==
+  dependencies:
+    "@semantic-release/error" "^2.1.0"
+    aggregate-error "^1.0.0"
+    debug "^4.0.0"
+    execa "^1.0.0"
+    lodash "^4.17.4"
+    parse-json "^4.0.0"
+
 "@semantic-release/git@7.0.4":
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-7.0.4.tgz#b10c85744044d797ebf979eb0fa1e6e499b4100c"
   integrity sha512-/kdHnetgogIC/W5CDYQ1xmxy+4KQG7MqkgnqcPi4dj8tXCJrmVy9XAR2LySUhRTtnDniLq0H29DsD9HW5x+PKQ==
+  dependencies:
+    "@semantic-release/error" "^2.1.0"
+    aggregate-error "^1.0.0"
+    debug "^4.0.0"
+    dir-glob "^2.0.0"
+    execa "^1.0.0"
+    fs-extra "^7.0.0"
+    globby "^8.0.1"
+    lodash "^4.17.4"
+    micromatch "^3.1.4"
+    p-reduce "^1.0.0"
+
+"@semantic-release/git@^7.0.1":
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-7.0.5.tgz#640e66683dbbb0a0771e9968e2dc15ec5facaf38"
+  integrity sha512-90TDMAQw9S5BXjygpEb8zdwLCnUmP5G2GfKHUvmFapFNh3UsI1AJljEUe5hJh/GOuHiyBD/whnCMYExsp8a34Q==
   dependencies:
     "@semantic-release/error" "^2.1.0"
     aggregate-error "^1.0.0"
@@ -891,6 +960,29 @@
   integrity sha512-Hdt6b8ST2pg6pl151PlcsnTcdsC2UJhA5FdbmunbZG/TVmlnKCZ4WUzpji7YqJtDLjbQTuFm/vhM6atW3XjMWg==
   dependencies:
     "@octokit/rest" "^15.2.0"
+    "@semantic-release/error" "^2.2.0"
+    aggregate-error "^1.0.0"
+    bottleneck "^2.0.1"
+    debug "^4.0.0"
+    dir-glob "^2.0.0"
+    fs-extra "^7.0.0"
+    globby "^8.0.0"
+    http-proxy-agent "^2.1.0"
+    https-proxy-agent "^2.2.1"
+    issue-parser "^3.0.0"
+    lodash "^4.17.4"
+    mime "^2.0.3"
+    p-filter "^1.0.0"
+    p-retry "^2.0.0"
+    parse-github-url "^1.0.1"
+    url-join "^4.0.0"
+
+"@semantic-release/github@^5.0.2":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-5.2.1.tgz#48a7cbd326471d7dc8d2fcea03580d2da58f4fc9"
+  integrity sha512-EVh5MCMOSl5WfOIum+k7fb7ZaDBcZAepPvtMrJOn8HKa9MERK6PgT76OKro+tReWjT1PnGiaKjofjyRC4BhN6Q==
+  dependencies:
+    "@octokit/rest" "^15.13.1"
     "@semantic-release/error" "^2.2.0"
     aggregate-error "^1.0.0"
     bottleneck "^2.0.1"
@@ -4054,7 +4146,26 @@ ember-assign-polyfill@~2.4.0:
     ember-cli-babel "^6.6.0"
     ember-cli-version-checker "^2.0.0"
 
-ember-cli-babel@7.1.3:
+ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.11.0, ember-cli-babel@^6.12.0, ember-cli-babel@^6.16.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2:
+  version "6.17.2"
+  resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.17.2.tgz#f0d53d2fb95e70c15d8db84760d045f88f458f69"
+  integrity sha512-9KcCvF1PcelEFTSiJ/Ld20tfuW9acMkwHC/xINLsmwqJVDbm3oEqWtiFDZ5ebaC278O5I0GqNJWJLYNoWMNZ8g==
+  dependencies:
+    amd-name-resolver "1.2.0"
+    babel-plugin-debug-macros "^0.2.0-beta.6"
+    babel-plugin-ember-modules-api-polyfill "^2.5.0"
+    babel-plugin-transform-es2015-modules-amd "^6.24.0"
+    babel-polyfill "^6.26.0"
+    babel-preset-env "^1.7.0"
+    broccoli-babel-transpiler "^6.5.0"
+    broccoli-debug "^0.6.4"
+    broccoli-funnel "^2.0.0"
+    broccoli-source "^1.1.0"
+    clone "^2.0.0"
+    ember-cli-version-checker "^2.1.2"
+    semver "^5.5.0"
+
+ember-cli-babel@^7.1.3:
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-7.1.3.tgz#a2a7374adb525369a3a205cedd54d8e0c3de3309"
   integrity sha512-wkftzRiPiLTKAhBKphsJEH8gmJIspq04f03DUvoS2/bqrssF04hhQVRquF4EF0ZiNxKI8f4ka/puVOGeBuRWDg==
@@ -4074,25 +4185,6 @@ ember-cli-babel@7.1.3:
     clone "^2.1.2"
     ember-cli-version-checker "^2.1.2"
     ensure-posix-path "^1.0.2"
-    semver "^5.5.0"
-
-ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.11.0, ember-cli-babel@^6.12.0, ember-cli-babel@^6.16.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2:
-  version "6.17.2"
-  resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.17.2.tgz#f0d53d2fb95e70c15d8db84760d045f88f458f69"
-  integrity sha512-9KcCvF1PcelEFTSiJ/Ld20tfuW9acMkwHC/xINLsmwqJVDbm3oEqWtiFDZ5ebaC278O5I0GqNJWJLYNoWMNZ8g==
-  dependencies:
-    amd-name-resolver "1.2.0"
-    babel-plugin-debug-macros "^0.2.0-beta.6"
-    babel-plugin-ember-modules-api-polyfill "^2.5.0"
-    babel-plugin-transform-es2015-modules-amd "^6.24.0"
-    babel-polyfill "^6.26.0"
-    babel-preset-env "^1.7.0"
-    broccoli-babel-transpiler "^6.5.0"
-    broccoli-debug "^0.6.4"
-    broccoli-funnel "^2.0.0"
-    broccoli-source "^1.1.0"
-    clone "^2.0.0"
-    ember-cli-version-checker "^2.1.2"
     semver "^5.5.0"
 
 ember-cli-blueprint-test-helpers@0.19.1:
@@ -9299,10 +9391,12 @@ quick-temp@^0.1.2, quick-temp@^0.1.3, quick-temp@^0.1.5, quick-temp@^0.1.8:
     rimraf "^2.5.4"
     underscore.string "~3.3.4"
 
-qunit-decorators@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/qunit-decorators/-/qunit-decorators-1.1.2.tgz#4a61bfe8a5ac9d2dd775e9767cb551eadc21303a"
-  integrity sha512-Ez8Qqlh2IZo5u/D6sFyiOX5Kq6RCy+4suRJ4KwxqckwMfivyVsdHPdDKYEbs8LvKTavxZToTU19VggsqkPXRog==
+qunit-decorators@^1.1.2:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/qunit-decorators/-/qunit-decorators-1.1.3.tgz#36595e2c0c6407b8d1e0de9df913c6ba52634949"
+  integrity sha512-TG30lvzHeg7sqrpuqE4KRif6ji2aXy8qtOT5L7CaAh/jRFAXhRZRYehwLtOpB7IHvQ7llux8k8Fj9/NyZMSuRw==
+  dependencies:
+    qunit "^2.4.1"
 
 qunit-dom@0.8.0:
   version "0.8.0"
@@ -9311,6 +9405,19 @@ qunit-dom@0.8.0:
   dependencies:
     broccoli-funnel "^2.0.0"
     broccoli-merge-trees "^3.0.1"
+
+qunit@^2.4.1:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/qunit/-/qunit-2.8.0.tgz#007474727cdba323c35f9526e21c0687f8ea04b3"
+  integrity sha512-bT7vvvE4Xvk6c/uSbvP11uZXlzPJINURQyG9zj5I0EXXycW9oeDCodvAOK3GuYZ+GoXiTAMsxVSXCPGeXlTWzg==
+  dependencies:
+    commander "2.12.2"
+    exists-stat "1.0.0"
+    findup-sync "2.0.0"
+    js-reporters "1.2.1"
+    resolve "1.5.0"
+    sane "^4.0.0"
+    walk-sync "0.3.2"
 
 qunit@~2.6.0:
   version "2.6.2"
