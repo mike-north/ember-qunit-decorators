@@ -813,12 +813,12 @@
   resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.9.3.tgz#30e1a0a0eb9714166966cca2b6f7d4346d6df111"
   integrity sha512-eRJ5mGGdv0YU4gXg+WMdN3XQ7/V/4eRoS/mpmqqHs2bFXFayaB+fqAP6dgzxlpm3aXsSdv4aHq/zLM5c1cx7Cg==
 
-"@mike-north/js-lib-renovate-config@^0.0.1":
+"@mike-north/js-lib-renovate-config@0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@mike-north/js-lib-renovate-config/-/js-lib-renovate-config-0.0.1.tgz#9e2878a5b9896b8b2838340f2a29f760e28e5ec5"
   integrity sha512-I/MYzrZJlMAKWZUJ4yxQK6tp9kCBKKdivNZ89ZXy/+rK6GjOIjX/UBsH3Xx3gdbQq0a3rmw0NHy+VJ9HKQWOUg==
 
-"@mike-north/js-lib-semantic-release-config@^0.0.0-development":
+"@mike-north/js-lib-semantic-release-config@0.0.0-development":
   version "0.0.0-development"
   resolved "https://registry.yarnpkg.com/@mike-north/js-lib-semantic-release-config/-/js-lib-semantic-release-config-0.0.0-development.tgz#b3c0f8972036c74dea94208a7f57b5d3a2f7dc1b"
   integrity sha512-dXMVK3duEXXb8guYfzcZ2D2Rs1/dFbbak5H5DJwcsDqQqlpjinb9wNJNNByOlz9eEUi48fenbO5TQFDn+9ioOg==
@@ -4630,10 +4630,10 @@ ember-source-channel-url@1.1.0, ember-source-channel-url@^1.0.1:
   dependencies:
     got "^8.0.1"
 
-ember-source@3.5.1:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.5.1.tgz#fed88dc675f031b499642dd19819f7f4d558d3fd"
-  integrity sha512-V+HEMiUu74DFWYBuqw1S1ZLBJcSnDDR48iLbN7SuUCYAW4UtTC091xUFzhNYVuZtPOfsmIZXhLaHyqrzQb9YeA==
+"ember-source@https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0bbf1ce363324a1e40c67c0a32676ffe32ea9a39.tgz":
+  version "3.6.0-canary"
+  uid f0d3118cd70d788e4e833cabc725890213f6c48a
+  resolved "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0bbf1ce363324a1e40c67c0a32676ffe32ea9a39.tgz#f0d3118cd70d788e4e833cabc725890213f6c48a"
   dependencies:
     broccoli-funnel "^2.0.1"
     broccoli-merge-trees "^2.0.0"
@@ -4643,7 +4643,6 @@ ember-source@3.5.1:
     ember-cli-normalize-entity-name "^1.0.0"
     ember-cli-path-utils "^1.0.0"
     ember-cli-string-utils "^1.1.0"
-    ember-cli-valid-component-name "^1.0.0"
     ember-cli-version-checker "^2.1.0"
     ember-router-generator "^1.2.3"
     inflection "^1.12.0"
