@@ -769,14 +769,14 @@
   dependencies:
     "@glimmer/util" "^0.36.4"
 
-"@microsoft/api-extractor@6.1.1":
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor/-/api-extractor-6.1.1.tgz#6734025a8ed90e47063ca170d6791da723c2d84a"
-  integrity sha512-bEGyeFZ34+fHEEnL7Eewcg7LZ6Ov00BL57bIn6ulU6vf9ulPCJvUBpeR85U/kA7Snd49Atjem5FubREG0fzwwA==
+"@microsoft/api-extractor@6.1.3":
+  version "6.1.3"
+  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor/-/api-extractor-6.1.3.tgz#251a8da31c8881fb9b188d9f63f7252d7ac41783"
+  integrity sha512-Smkj5L3DACce1OtxmQB1U9qVpDuZJvUeo8AKrQkXf9KSfbOVSfGsEHPmNvoUMg2tbj4wnO6WMmJeEWL2Zy2n/Q==
   dependencies:
-    "@microsoft/node-core-library" "3.5.0"
+    "@microsoft/node-core-library" "3.5.2"
     "@microsoft/ts-command-line" "4.2.2"
-    "@microsoft/tsdoc" "0.9.3"
+    "@microsoft/tsdoc" "0.12.0"
     "@types/node" "8.5.8"
     "@types/z-schema" "3.16.31"
     colors "~1.2.1"
@@ -785,16 +785,16 @@
     typescript "~3.0.3"
     z-schema "~3.18.3"
 
-"@microsoft/node-core-library@3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@microsoft/node-core-library/-/node-core-library-3.5.0.tgz#27634998dec693ec538491dce407b813f0f86232"
-  integrity sha512-DZ16Aa64BMwsfw8yvHUDVhAX2YWqIpPpWXC0BQnDawG1BgkMCox7aBxC2JofnMnMOSzaeXmuUSuy32s4D64ZeA==
+"@microsoft/node-core-library@3.5.2":
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/@microsoft/node-core-library/-/node-core-library-3.5.2.tgz#fdda245c7b018221299567251cbadf8042d83acd"
+  integrity sha512-2zDWLqJ/ABjxtk0thb//bohWEFGOLKQ7gjfAS6cfCcpyVXX08qvO79pb0eGOvNXi2ggfuuKsoEIRXl6idbV7UQ==
   dependencies:
-    "@types/fs-extra" "5.0.1"
+    "@types/fs-extra" "5.0.4"
     "@types/node" "8.5.8"
     "@types/z-schema" "3.16.31"
     colors "~1.2.1"
-    fs-extra "~5.0.0"
+    fs-extra "~7.0.1"
     jju "~1.3.0"
     z-schema "~3.18.3"
 
@@ -808,10 +808,10 @@
     argparse "~1.0.9"
     colors "~1.2.1"
 
-"@microsoft/tsdoc@0.9.3":
-  version "0.9.3"
-  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.9.3.tgz#30e1a0a0eb9714166966cca2b6f7d4346d6df111"
-  integrity sha512-eRJ5mGGdv0YU4gXg+WMdN3XQ7/V/4eRoS/mpmqqHs2bFXFayaB+fqAP6dgzxlpm3aXsSdv4aHq/zLM5c1cx7Cg==
+"@microsoft/tsdoc@0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.12.0.tgz#c186327359c40574e0a02eaf2513a83835f1e576"
+  integrity sha512-c1mABULA2biVJ+AdoWD6k975wMnMeet25hC1VCTill6qyguermhSwmGClhCjzoxJJLvMk0zUzK9FVUNtRuNpfA==
 
 "@mike-north/js-lib-renovate-config@0.0.1":
   version "0.0.1"
@@ -1218,10 +1218,10 @@
   resolved "https://registry.yarnpkg.com/@types/ember__utils/-/ember__utils-3.0.1.tgz#f08aa24920515400fec869cbf29df69c4773f6d0"
   integrity sha512-seA9IX2DCrkHxgVmtoKUVEBj6to8vqlPG7AzwB2oodLlQZiRwmrnn+fjOn+wKA5btIVIiRdxn/f41qFZXcPy6w==
 
-"@types/fs-extra@5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-5.0.1.tgz#cd856fbbdd6af2c11f26f8928fd8644c9e9616c9"
-  integrity sha512-h3wnflb+jMTipvbbZnClgA2BexrT4w0GcfoCz5qyxd0IRsbqhLSyesM6mqZTAnhbVmhyTm5tuxfRu9R+8l+lGw==
+"@types/fs-extra@5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-5.0.4.tgz#b971134d162cc0497d221adde3dbb67502225599"
+  integrity sha512-DsknoBvD8s+RFfSGjmERJ7ZOP1HI0UZRA3FSI+Zakhrc/Gy26YQsLI+m5V5DHxroHRJqCDLKJp7Hixn8zyaF7g==
   dependencies:
     "@types/node" "*"
 
@@ -5660,7 +5660,7 @@ fs-extra@^4.0.2, fs-extra@^4.0.3:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-extra@^5.0.0, fs-extra@~5.0.0:
+fs-extra@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-5.0.0.tgz#414d0110cdd06705734d055652c5411260c31abd"
   integrity sha512-66Pm4RYbjzdyeuqudYqhFiNBbCIuI9kgRqLPSHIlXHidW8NIQtVdkM1yeZ4lXwuhbTETv3EUGMNHAAw6hiundQ==
@@ -5682,6 +5682,15 @@ fs-extra@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-7.0.0.tgz#8cc3f47ce07ef7b3593a11b9fb245f7e34c041d6"
   integrity sha512-EglNDLRpmaTWiD/qraZn6HREAEAHJcJOmxNEYwq6xeMKnVMAy3GUcFB+wXt2C6k4CNvB/mP1y/U3dzvKKj5OtQ==
+  dependencies:
+    graceful-fs "^4.1.2"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
+fs-extra@~7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-7.0.1.tgz#4f189c44aa123b895f722804f55ea23eadc348e9"
+  integrity sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
   dependencies:
     graceful-fs "^4.1.2"
     jsonfile "^4.0.0"
