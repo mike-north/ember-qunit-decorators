@@ -73,7 +73,7 @@
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0bbf1ce363324a1e40c67c0a32676ffe32ea9a39.tgz",
     "ember-source-channel-url": "1.1.0",
     "ember-try": "1.1.0",
-    "eslint-plugin-ember": "5.2.0",
+    "eslint-plugin-ember": "5.3.0",
     "eslint-plugin-node": "8.0.0",
     "loader.js": "4.7.0",
     "mocha": "4.1.0",
