@@ -769,10 +769,10 @@
   dependencies:
     "@glimmer/util" "^0.36.4"
 
-"@microsoft/api-extractor@6.1.4":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor/-/api-extractor-6.1.4.tgz#a47d110d7a20d32d800ac49a64af9f527e7a5d4b"
-  integrity sha512-fgKr3BvgD7rXingrsvreLDhEQyH6RCGThNrQLIwCGiR1VXAGolC41fgzyQ8xNlKDvAwlAaaDFhw7DKQSz1192g==
+"@microsoft/api-extractor@6.1.5":
+  version "6.1.5"
+  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor/-/api-extractor-6.1.5.tgz#672fd08b4ff8d42274fecaee2f449dde5873bcff"
+  integrity sha512-I84CxOz7tfB8eELchaWEifC8UeNZVj1glIQGKBN5NH+nY92heLX3IyfKdcGLbk3l7OzXf4VqhgAvzse+PrjNrQ==
   dependencies:
     "@microsoft/node-core-library" "3.5.2"
     "@microsoft/ts-command-line" "4.2.2"

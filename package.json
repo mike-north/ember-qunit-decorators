@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@ember/optional-features": "0.7.0",
-    "@microsoft/api-extractor": "6.1.4",
+    "@microsoft/api-extractor": "6.1.5",
     "@mike-north/js-lib-renovate-config": "1.0.0",
     "@mike-north/js-lib-semantic-release-config": "1.0.1",
     "@semantic-release/exec": "3.3.0",
