@@ -769,12 +769,12 @@
   dependencies:
     "@glimmer/util" "^0.36.4"
 
-"@microsoft/api-extractor@6.1.5":
-  version "6.1.5"
-  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor/-/api-extractor-6.1.5.tgz#672fd08b4ff8d42274fecaee2f449dde5873bcff"
-  integrity sha512-I84CxOz7tfB8eELchaWEifC8UeNZVj1glIQGKBN5NH+nY92heLX3IyfKdcGLbk3l7OzXf4VqhgAvzse+PrjNrQ==
+"@microsoft/api-extractor@6.1.6":
+  version "6.1.6"
+  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor/-/api-extractor-6.1.6.tgz#0ba2ae19c13a4dba37c0e2465ce7887a5480e847"
+  integrity sha512-Iik7A/PA3bhGBtlsxFWlEVIwBNuEshpzPZKAAfdQL2LrsUdPI3Ehjad0SJA1Sri9Hg241npVOx5L5g9aPIzBoQ==
   dependencies:
-    "@microsoft/node-core-library" "3.5.2"
+    "@microsoft/node-core-library" "3.6.0"
     "@microsoft/ts-command-line" "4.2.2"
     "@microsoft/tsdoc" "0.12.2"
     "@types/node" "8.5.8"
@@ -782,13 +782,13 @@
     colors "~1.2.1"
     jju "~1.3.0"
     lodash "~4.17.5"
-    typescript "~3.0.3"
+    typescript "~3.1.6"
     z-schema "~3.18.3"
 
-"@microsoft/node-core-library@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@microsoft/node-core-library/-/node-core-library-3.5.2.tgz#fdda245c7b018221299567251cbadf8042d83acd"
-  integrity sha512-2zDWLqJ/ABjxtk0thb//bohWEFGOLKQ7gjfAS6cfCcpyVXX08qvO79pb0eGOvNXi2ggfuuKsoEIRXl6idbV7UQ==
+"@microsoft/node-core-library@3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@microsoft/node-core-library/-/node-core-library-3.6.0.tgz#f5db190497dc2102b4d584d7fc0c8d364e224b60"
+  integrity sha512-dwxBTdr3i3JcntPiklv6//Z/UVZO9pO1TcvKYy+hNZ/bpK32hyT0LaCCS27jyWHPnxHIRA130Y9CptfqrDzrCg==
   dependencies:
     "@types/fs-extra" "5.0.4"
     "@types/node" "8.5.8"
@@ -11296,15 +11296,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@3.1.6:
+typescript@3.1.6, typescript@~3.1.6:
   version "3.1.6"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.1.6.tgz#b6543a83cfc8c2befb3f4c8fba6896f5b0c9be68"
   integrity sha512-tDMYfVtvpb96msS1lDX9MEdHrW4yOuZ4Kdc4Him9oU796XldPYF/t2+uKoX0BBa0hXXwDlqYQbXY5Rzjzc5hBA==
-
-typescript@~3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.0.3.tgz#4853b3e275ecdaa27f78fda46dc273a7eb7fc1c8"
-  integrity sha512-kk80vLW9iGtjMnIv11qyxLqZm20UklzuR2tL0QAnDIygIUIemcZMxlMWudl9OOt76H3ntVzcTiddQ1/pAAJMYg==
 
 uc.micro@^1.0.1, uc.micro@^1.0.5:
   version "1.0.5"
