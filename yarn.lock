@@ -769,12 +769,12 @@
   dependencies:
     "@glimmer/util" "^0.36.4"
 
-"@microsoft/api-extractor@6.1.6":
-  version "6.1.6"
-  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor/-/api-extractor-6.1.6.tgz#0ba2ae19c13a4dba37c0e2465ce7887a5480e847"
-  integrity sha512-Iik7A/PA3bhGBtlsxFWlEVIwBNuEshpzPZKAAfdQL2LrsUdPI3Ehjad0SJA1Sri9Hg241npVOx5L5g9aPIzBoQ==
+"@microsoft/api-extractor@6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor/-/api-extractor-6.2.0.tgz#1ff1ee92a816499bf4374132a1daca89f7b5d8b4"
+  integrity sha512-vfPMWilUy60hGvYvA33ENJkcckzMNZH4oKbY7T05omn8W41B5Lye+qkUWfJEs8cHT70J0mpmA7rAVvdF3qZtPw==
   dependencies:
-    "@microsoft/node-core-library" "3.6.0"
+    "@microsoft/node-core-library" "3.7.0"
     "@microsoft/ts-command-line" "4.2.2"
     "@microsoft/tsdoc" "0.12.2"
     "@types/node" "8.5.8"
@@ -785,10 +785,10 @@
     typescript "~3.1.6"
     z-schema "~3.18.3"
 
-"@microsoft/node-core-library@3.6.0":
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/@microsoft/node-core-library/-/node-core-library-3.6.0.tgz#f5db190497dc2102b4d584d7fc0c8d364e224b60"
-  integrity sha512-dwxBTdr3i3JcntPiklv6//Z/UVZO9pO1TcvKYy+hNZ/bpK32hyT0LaCCS27jyWHPnxHIRA130Y9CptfqrDzrCg==
+"@microsoft/node-core-library@3.7.0":
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@microsoft/node-core-library/-/node-core-library-3.7.0.tgz#b234311f208ad04e614330669f448249bafa3ec8"
+  integrity sha512-Mae+MFnlcrcEmd6cmNzSv7xG74jWtQRlcOVjIwi10lECwm2LJIaiCol/PrsyARnjroDzf1eDH3quXSY7dTxLaA==
   dependencies:
     "@types/fs-extra" "5.0.4"
     "@types/node" "8.5.8"
