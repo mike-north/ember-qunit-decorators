@@ -769,10 +769,10 @@
   dependencies:
     "@glimmer/util" "^0.36.4"
 
-"@microsoft/api-extractor@6.2.0":
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor/-/api-extractor-6.2.0.tgz#1ff1ee92a816499bf4374132a1daca89f7b5d8b4"
-  integrity sha512-vfPMWilUy60hGvYvA33ENJkcckzMNZH4oKbY7T05omn8W41B5Lye+qkUWfJEs8cHT70J0mpmA7rAVvdF3qZtPw==
+"@microsoft/api-extractor@6.3.0":
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor/-/api-extractor-6.3.0.tgz#73ee9aa15ab976d171e9b0eaeb6748969be847e2"
+  integrity sha512-rhC3Wc/Zaj44W8hJYJlaf+gFGxVwLvSEOnPslYUi3anFbtXBNZpK3ocF10SgtSaca2QfKA8UNN1rCIwXUCdz7g==
   dependencies:
     "@microsoft/node-core-library" "3.7.0"
     "@microsoft/ts-command-line" "4.2.2"
@@ -782,6 +782,7 @@
     colors "~1.2.1"
     jju "~1.3.0"
     lodash "~4.17.5"
+    resolve "1.8.1"
     typescript "~3.1.6"
     z-schema "~3.18.3"
 
@@ -9997,7 +9998,7 @@ resolve@1.5.0:
   dependencies:
     path-parse "^1.0.5"
 
-resolve@^1.1.3, resolve@^1.1.6, resolve@^1.3.2, resolve@^1.3.3, resolve@^1.4.0, resolve@^1.5.0, resolve@^1.6.0, resolve@^1.7.1, resolve@^1.8.1:
+resolve@1.8.1, resolve@^1.1.3, resolve@^1.1.6, resolve@^1.3.2, resolve@^1.3.3, resolve@^1.4.0, resolve@^1.5.0, resolve@^1.6.0, resolve@^1.7.1, resolve@^1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.8.1.tgz#82f1ec19a423ac1fbd080b0bab06ba36e84a7a26"
   integrity sha512-AicPrAC7Qu1JxPCZ9ZgCZlY35QgFnNqc+0LtbRNxnVw4TXvjQ72wnuL9JQcEBgXkI9JM8MsT9kaQoHcpCRJOYA==
