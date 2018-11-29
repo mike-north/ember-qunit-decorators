@@ -769,14 +769,14 @@
   dependencies:
     "@glimmer/util" "^0.36.4"
 
-"@microsoft/api-extractor@6.3.0":
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor/-/api-extractor-6.3.0.tgz#73ee9aa15ab976d171e9b0eaeb6748969be847e2"
-  integrity sha512-rhC3Wc/Zaj44W8hJYJlaf+gFGxVwLvSEOnPslYUi3anFbtXBNZpK3ocF10SgtSaca2QfKA8UNN1rCIwXUCdz7g==
+"@microsoft/api-extractor@7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor/-/api-extractor-7.0.0.tgz#6f1c6b0a4c11a757e258b91d6891950f53d01c2a"
+  integrity sha512-gFZuOwHvIDM5FyNsEuHI/GJvWXaeH7oIimy9b99aB+KSO4XRH1qnXPvQW2wFCBYmxShdoQ+Aez1xuIN0dGojog==
   dependencies:
-    "@microsoft/node-core-library" "3.7.0"
+    "@microsoft/node-core-library" "3.7.1"
     "@microsoft/ts-command-line" "4.2.2"
-    "@microsoft/tsdoc" "0.12.2"
+    "@microsoft/tsdoc" "0.12.4"
     "@types/node" "8.5.8"
     "@types/z-schema" "3.16.31"
     colors "~1.2.1"
@@ -786,10 +786,10 @@
     typescript "~3.1.6"
     z-schema "~3.18.3"
 
-"@microsoft/node-core-library@3.7.0":
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/@microsoft/node-core-library/-/node-core-library-3.7.0.tgz#b234311f208ad04e614330669f448249bafa3ec8"
-  integrity sha512-Mae+MFnlcrcEmd6cmNzSv7xG74jWtQRlcOVjIwi10lECwm2LJIaiCol/PrsyARnjroDzf1eDH3quXSY7dTxLaA==
+"@microsoft/node-core-library@3.7.1":
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/@microsoft/node-core-library/-/node-core-library-3.7.1.tgz#d3fd3a1f7b0bb80f84087cfb64b0a99f6a9f5631"
+  integrity sha512-OgZlw59/x+wJyy8Yc4bw0QRfNKqEQdfgVErg8Qgc6w8/Np3hZg/yLuZ7IceI2kk/cqMDuR/HCm73okNpcoxlSQ==
   dependencies:
     "@types/fs-extra" "5.0.4"
     "@types/node" "8.5.8"
@@ -809,10 +809,10 @@
     argparse "~1.0.9"
     colors "~1.2.1"
 
-"@microsoft/tsdoc@0.12.2":
-  version "0.12.2"
-  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.12.2.tgz#e3540be2e021ee0427a64ad10468ead90a758867"
-  integrity sha512-L/srhENhBtbZLUD9FfJ2ZQdnYv3A3MT3UI2EMbC06fHUzIxLjjbkomD6o42UrbsRMwlS9p1BtxExeaCdX73q2Q==
+"@microsoft/tsdoc@0.12.4":
+  version "0.12.4"
+  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.12.4.tgz#42159590f2b12e23f6028c70aed41dd5b11275c3"
+  integrity sha512-nQZVQg3fXygj+9JT/FSPZOz3vqAIVAAR3ZuAuUdU4DSM/ubJq5lbl1hpLtl+REFmEq1rkvDmmPoJAbSoqjcmZQ==
 
 "@mike-north/js-lib-renovate-config@1.0.0":
   version "1.0.0"
