@@ -28,7 +28,6 @@
     "prepublishOnly": "ember ts:precompile",
     "postpublish": "ember ts:clean",
     "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once",
     "nodetest": "mocha node-tests --recursive"
   },
   "dependencies": {
@@ -79,7 +78,6 @@
     "mocha": "5.2.0",
     "qunit-dom": "0.8.2",
     "semantic-release": "15.12.3",
-    "travis-deploy-once": "5.0.9",
     "typescript": "3.2.1"
   },
   "engines": {
