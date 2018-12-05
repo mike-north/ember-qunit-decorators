@@ -8,12 +8,13 @@ export class SimpleTest extends EmberTest {
     this.myFunction(); // works fine
   }
 
-  public myFunction() {
+  public myFunction(assert?: Assert) {
+    if (assert) assert.ok(true);
     return true;
   }
 
   @test
-  public testOne(_assert: Assert) {
-    this.myFunction(); // TypeError
+  public testOne(assert: Assert) {
+    this.myFunction(assert);
   }
 }
