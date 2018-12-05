@@ -5,6 +5,9 @@ import { EmberRenderingTest } from 'ember-qunit-decorators/test-support';
 
 @suite('Integration | Component | x-foo')
 export class XFooTests extends EmberRenderingTest {
+  foo() {
+    return 'ok';
+  }
 
   @test('it renders')
   async itRenders(assert: Assert) {
@@ -21,6 +24,8 @@ export class XFooTests extends EmberRenderingTest {
         template block text
       {{/x-foo}}
     `);
+
+    assert.equal(this.foo(), 'ok');
 
     assert.equal(('' + this.element.textContent).trim(), 'template block text');
   }
