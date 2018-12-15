@@ -41,7 +41,7 @@
     "@microsoft/api-extractor": "6.3.0",
     "@mike-north/js-lib-renovate-config": "1.1.5",
     "@mike-north/js-lib-semantic-release-config": "1.0.1",
-    "@semantic-release/exec": "3.3.0",
+    "@semantic-release/exec": "3.3.1",
     "@semantic-release/git": "7.0.5",
     "@types/ember": "3.0.25",
     "@types/ember-qunit": "3.4.3",
@@ -81,7 +81,7 @@
     "loader.js": "4.7.0",
     "mocha": "5.2.0",
     "qunit-dom": "0.8.3",
-    "semantic-release": "15.12.4",
+    "semantic-release": "15.13.0",
     "typescript": "3.2.1"
   },
   "engines": {
