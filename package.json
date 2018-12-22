@@ -42,7 +42,7 @@
     "@mike-north/js-lib-renovate-config": "1.1.5",
     "@mike-north/js-lib-semantic-release-config": "1.0.1",
     "@semantic-release/exec": "3.3.1",
-    "@semantic-release/git": "7.0.5",
+    "@semantic-release/git": "7.0.6",
     "@types/ember": "3.0.26",
     "@types/ember-qunit": "3.4.4",
     "@types/ember-test-helpers": "1.0.4",
@@ -81,7 +81,7 @@
     "loader.js": "4.7.0",
     "mocha": "5.2.0",
     "qunit-dom": "0.8.3",
-    "semantic-release": "15.13.0",
+    "semantic-release": "15.13.1",
     "typescript": "3.2.1"
   },
   "engines": {
