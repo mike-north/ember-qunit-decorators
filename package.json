@@ -51,7 +51,7 @@
     "@types/mocha": "5.2.7",
     "@types/qunit": "2.9.0",
     "@types/rsvp": "4.0.2",
-    "babel-eslint": "10.0.1",
+    "babel-eslint": "10.0.2",
     "broccoli-asset-rev": "3.0.0",
     "broccoli-stew": "2.1.0",
     "ember-ajax": "5.0.0",
