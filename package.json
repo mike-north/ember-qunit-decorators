@@ -72,7 +72,7 @@
     "ember-export-application-global": "2.0.1",
     "ember-load-initializers": "2.1.1",
     "ember-maybe-import-regenerator": "0.1.6",
-    "ember-resolver": "5.3.0",
+    "ember-resolver": "6.0.0",
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0bbf1ce363324a1e40c67c0a32676ffe32ea9a39.tgz",
     "ember-source-channel-url": "2.0.1",
     "ember-try": "1.2.1",
