@@ -53,7 +53,7 @@
     "@types/rsvp": "4.0.4",
     "babel-eslint": "10.1.0",
     "broccoli-asset-rev": "3.0.0",
-    "broccoli-stew": "2.1.0",
+    "broccoli-stew": "3.0.0",
     "ember-ajax": "5.1.1",
     "ember-cli": "3.26.1",
     "ember-cli-blueprint-test-helpers": "0.19.2",
