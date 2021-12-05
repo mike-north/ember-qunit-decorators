@@ -75,7 +75,7 @@
     "ember-resolver": "8.0.3",
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0bbf1ce363324a1e40c67c0a32676ffe32ea9a39.tgz",
     "ember-source-channel-url": "2.0.1",
-    "ember-try": "1.2.1",
+    "ember-try": "2.0.0",
     "eslint-plugin-ember": "10.5.8",
     "eslint-plugin-node": "11.1.0",
     "loader.js": "4.7.0",
