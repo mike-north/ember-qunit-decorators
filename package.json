@@ -71,7 +71,7 @@
     "ember-disable-prototype-extensions": "1.1.3",
     "ember-export-application-global": "2.0.1",
     "ember-load-initializers": "2.1.2",
-    "ember-maybe-import-regenerator": "0.1.6",
+    "ember-maybe-import-regenerator": "1.0.0",
     "ember-resolver": "8.0.3",
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0bbf1ce363324a1e40c67c0a32676ffe32ea9a39.tgz",
     "ember-source-channel-url": "2.0.1",
