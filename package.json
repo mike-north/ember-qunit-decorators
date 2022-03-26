@@ -79,7 +79,7 @@
     "eslint-plugin-ember": "10.5.8",
     "eslint-plugin-node": "11.1.0",
     "loader.js": "4.7.0",
-    "mocha": "6.1.2",
+    "mocha": "9.2.2",
     "qunit-dom": "2.0.0",
     "semantic-release": "15.13.30",
     "typescript": "3.2.4"
